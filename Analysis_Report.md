@@ -323,7 +323,7 @@ pptest <- predict(preot, testclean)
 pptest$classe <- as.factor(NA)
 ```
 
-Finally, as the best predictor, the random forest model was used to predict the class in the 20 observations included in the testing set. All were then plotted.
+Finally, as the best predictor, the random forest model was used to predict the class in the 20 observations included in the testing set. All were then plotted. Based on the predictions obtained in the validation set for the random forest model, the out of sample error should be less than 0.5%. 
 
 ``` r
 predtest <- predict(modrf, newdata = pptest)
